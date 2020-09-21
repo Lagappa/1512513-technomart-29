@@ -20,8 +20,9 @@
   --white-opacity: rgba(255, 255, 255, 0.5);
   --white-opacity-slogan: rgba(255, 255, 255, 0.3);
   --white2: rgba(0, 0, 0, 0.0001);
-  --basic-greylight-opacity: #C5C5C5 opacity: 0.3;
+  --basic-greylight-opacity: rgba(197,197,197, 0.3);
   --grey-extra-light: #A9A9A9;
+  --grey-extra-light-opacity: rgba(169,169,169,0.3);
   --pinklight: #F9F5F0;
   --dark-green: #518534;
   --light-blue: #F2F6F8;
@@ -256,24 +257,27 @@ img {
   list-style: none;
 }
 
-.slogan-h {
+.slogan-list h3 {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-white);
 }
 
-.slogan-p {
+.slogan-item a {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--white-opacity-slogan);
+  transition: 0.3s;
 }
 
-/* НИЖЕ ЧТО-ТО НЕ ТАК С ЦВЕТОМ ТЕКСТА ПРИ НАВЕДЕНИИ*/
+.slogan-item a:hover {
+  background-color: var(--basic-greylight-opacity);
+  color: var(--basic-white);
+}
 
-.slogan-p:hover {
-  background-color: var(--basic-greylight);
-  opacity: 0.3;
+.slogan-item a:active{
+  background-color: var(--grey-extra-light-opacity);
   color: var(--basic-white);
 }
 
@@ -408,14 +412,14 @@ img {
   background-color: var(--basic-background);
 }
 
-.black-h {
+.service h2{
   font-size: 30px;
   line-height: 30px;
   color: var(--black);
 }
 
-.black-p {
-  color: inherit;
+.service p {
+  color: var(--black);
   font-family: PT Sans;
 }
 
@@ -429,7 +433,7 @@ img {
   list-style: none;
 }
 
-.advantages-h {
+.advantages-slider h3 {
   font-size: 30px;
   line-height: 30px;
   color: var(--dark-blue);
@@ -441,7 +445,41 @@ img {
   list-style: none;
 }
 
-.tc {
+.advantages-text p {
+  color: var(--black);
+  font-family: PT Sans;
+}
+
+.guarantee-text {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guarantee-text p {
+  color: var(--black);
+  font-family: PT Sans;
+}
+
+.credit-text {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credit-text p {
+  color: var(--black);
+  font-family: PT Sans;
+}
+
+.info h2 {
+font-size: 30px;
+line-height: 30px;
+color: var(--black);
+}
+
+
+.info ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -449,9 +487,37 @@ img {
   line-height: 24px;
 }
 
+.info p {
+  color: var(--black);
+  font-family: PT Sans;
+}
+
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
+}
+
+.contacts p {
+  color: var(--black);
+  font-family: PT Sans;
+}
+
 .final {
   background-color: var(--basic-background);
 }
+
+.final h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
+}
+
+.final p {
+  color: var(--black);
+  font-family: PT Sans;
+}
+
 
 .main-footer {
   background-color: var(--dark-blue);
