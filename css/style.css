@@ -301,6 +301,14 @@ img {
   background-color: var(--yellow);
 }
 
+.advantages-slider {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  background-color: hsl(204 29% 97%); /* ЦВЕТ И ПРОЗРАЧНОСТЬ!!!*/
+}
+
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -429,47 +437,60 @@ img {
   color: var(--basic-white);
   background-color: var(--dark-blue);
   margin: 0;
-  padding: 0;
+  padding:  50px 0;
   list-style: none;
+  box-sizing: border-box;
+  position: relative;
+  align-self: start;
 }
 
-.advantages-slider h3 {
-  font-size: 30px;
-  line-height: 30px;
-  color: var(--dark-blue);
+/********** Shadow **************/
+.advantages:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 100%;
+  top: 5px;
+  bottom: 5px;
+  width: 24px;
+  border-radius: 50%;
+  box-shadow: -7px 0 3px 0px hsla(0, 0%, 10%, 0.2); /* Что тут с цветом делать??*/
+}
+/********************************/
+
+.slider-tab {
+  box-sizing: border-box;
+  display: block;
+  padding: 20px 30px;
+  color: var(--basic-white);
+  text-decoration: none;
+  background-color: var(--dark-blue);
+  border-top: 1px var(--basic-background) solid;
+  border-bottom: 1px var(--hader-top) solid;
 }
 
-.advantages-text {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.slider-tab:hover {
+  background-color: var(--hader-top);
 }
 
-.advantages-text p {
-  color: var(--black);
-  font-family: PT Sans;
+.slider-content {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
 
-.guarantee-text {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.slider-item {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  min-height: 100%;
+  padding: 30px 50px;
+  background-color: hsl(204 29% 97%); /*ЦВЕТ!!! Нужна ли эта строка?*/
 }
 
-.guarantee-text p {
-  color: var(--black);
-  font-family: PT Sans;
-}
-
-.credit-text {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.credit-text p {
-  color: var(--black);
-  font-family: PT Sans;
+.slider-item:target {
+  z-index: 10;
 }
 
 .info h2 {
