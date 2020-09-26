@@ -20,9 +20,9 @@
   --white-opacity: rgba(255, 255, 255, 0.5);
   --white-opacity-slogan: rgba(255, 255, 255, 0.3);
   --white2: rgba(0, 0, 0, 0.0001);
-  --basic-greylight-opacity: rgba(197,197,197, 0.3);
+  --basic-greylight-opacity: rgba(197, 197, 197, 0.3);
   --grey-extra-light: #A9A9A9;
-  --grey-extra-light-opacity: rgba(169,169,169,0.3);
+  --grey-extra-light-opacity: rgba(169, 169, 169, 0.3);
   --pinklight: #F9F5F0;
   --dark-green: #518534;
   --light-blue: #F2F6F8;
@@ -276,7 +276,7 @@ img {
   color: var(--basic-white);
 }
 
-.slogan-item a:active{
+.slogan-item a:active {
   background-color: var(--grey-extra-light-opacity);
   color: var(--basic-white);
 }
@@ -305,7 +305,8 @@ img {
   box-sizing: border-box;
   display: flex;
   margin: 0;
-  background-color: hsl(204 29% 97%); /* ЦВЕТ И ПРОЗРАЧНОСТЬ!!!*/
+  background-color: hsl(204 29% 97%);
+  /* ЦВЕТ И ПРОЗРАЧНОСТЬ!!!*/
 }
 
 
@@ -420,7 +421,7 @@ img {
   background-color: var(--basic-background);
 }
 
-.service h2{
+.service h2 {
   font-size: 30px;
   line-height: 30px;
   color: var(--black);
@@ -437,7 +438,7 @@ img {
   color: var(--basic-white);
   background-color: var(--dark-blue);
   margin: 0;
-  padding:  50px 0;
+  padding: 50px 0;
   list-style: none;
   box-sizing: border-box;
   position: relative;
@@ -454,8 +455,10 @@ img {
   bottom: 5px;
   width: 24px;
   border-radius: 50%;
-  box-shadow: -7px 0 3px 0px hsla(0, 0%, 10%, 0.2); /* Что тут с цветом делать??*/
+  box-shadow: -7px 0 3px 0px hsla(0, 0%, 10%, 0.2);
+  /* Что тут с цветом делать??*/
 }
+
 /********************************/
 
 .slider-tab {
@@ -486,7 +489,8 @@ img {
   width: 400px;
   min-height: 100%;
   padding: 30px 50px;
-  background-color: hsl(204 29% 97%); /*ЦВЕТ!!! Нужна ли эта строка?*/
+  background-color: hsl(204 29% 97%);
+  /*ЦВЕТ!!! Нужна ли эта строка?*/
 }
 
 .slider-item:target {
@@ -494,9 +498,9 @@ img {
 }
 
 .info h2 {
-font-size: 30px;
-line-height: 30px;
-color: var(--black);
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
 }
 
 
