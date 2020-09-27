@@ -91,6 +91,13 @@ img {
   transition: 0.3s;
 }
 
+.bookmark {
+  background: url(../img/bookmark-icon.svg) no-repeat;
+  background-size: 14px, 16px;
+  background-position: left center;
+  padding: 20px;
+}
+
 .about {
   color: var(--basic-red);
   font-size: 16px;
@@ -317,7 +324,6 @@ img {
   background-color: var(--grey-extra-light);
 }
 
-/*СЛАЙДЕР*/
 .slider li {
   list-style: none;
 }
@@ -333,6 +339,19 @@ img {
   line-height: 24px;
   color: var(--basic-white);
 }
+
+.perforator {
+  background: url(../img/perforator-slider.jpg) no-repeat;
+  height: 266px;
+  width: 620px;
+}
+
+.drill {
+  background: url(../img/drill-slider.jpg) no-repeat;
+  height: 266px;
+  width: 620px;
+}
+
 
 .top {
   background-color: var(--pinklight);
