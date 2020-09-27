@@ -292,8 +292,22 @@ img {
   background-color: var(--special-yellow);
 }
 
+.materials {
+  background-image: url(../img/paint-can-icon.svg) no-repeat;
+  background-size: 44px, 65px;
+  background-position: 10%;
+  padding: 20px;
+}
+
 .slogan-item-blue {
   background-color: var(--special-blue);
+}
+
+.tool {
+  background-image: url(../img/drill.svg) no-repeat;
+  background-size: 75px, 61px;
+  background-position: 10%;
+  padding: 20px;
 }
 
 .slogan-item-lilac {
@@ -392,6 +406,13 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: var(--grey-extra-light)
+}
+
+.cart{
+  background: url(../img/cart-icon.svg) no-repeat;
+  background-size: 15px, 15px;
+  background-position: left center;
+  padding: 20px;
 }
 
 .add-cart {
