@@ -51,13 +51,38 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+
 .main-navigation {
   background-color: var(--basic-background);
+  display: grid;
 }
 
 .header-top {
   background-color: var(--header-top);
 }
+
+.main-header {
+  margin-bottom: 70px;
+}
+
+
+/* НЕ РАБОТАЕТ ВЫСОТА ФОНА ПОД ЛОГОТИПОМ*/
+.main-header-logo {
+  background-color: var(--basic-red);
+  height: 220px;
+  width: 47px;
+ }
 
 .user-list {
   font-size: 18px;
