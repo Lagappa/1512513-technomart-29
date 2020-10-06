@@ -57,7 +57,6 @@ img {
 
 .page-body {
   min-height: 100%;
-  display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -65,7 +64,6 @@ img {
 
 .main-navigation {
   background-color: var(--basic-background);
-  display: grid;
 }
 
 .header-top {
@@ -76,13 +74,20 @@ img {
   margin-bottom: 70px;
 }
 
-
-/* НЕ РАБОТАЕТ ВЫСОТА ФОНА ПОД ЛОГОТИПОМ*/
 .main-header-logo {
   background-color: var(--basic-red);
-  height: 220px;
-  width: 47px;
- }
+  height: 47px;
+  width: 220px;
+}
+
+.main-header-logo img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .user-list {
   font-size: 18px;
@@ -91,6 +96,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .user-list a {
@@ -100,6 +107,8 @@ img {
 .order {
   background-color: var(--basic-green);
   transition: all 0.3s;
+  padding: 9px;
+  display: block;
 }
 
 .order:hover {
@@ -120,7 +129,8 @@ img {
   background: url(../img/bookmark-icon.svg) no-repeat;
   background-size: 14px, 16px;
   background-position: left center;
-  padding: 20px;
+  padding: 10px 20px;
+  display: block;
 }
 
 .about {
@@ -188,6 +198,8 @@ img {
   padding: 0;
   list-style: none;
   background-color: var(--basic-white);
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .people a {
@@ -211,6 +223,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .personal a {
@@ -318,10 +332,12 @@ img {
 }
 
 .materials {
-  background-image: url(../img/paint-can-icon.svg) no-repeat;
+  background-image: url(../img/paint-can-icon.svg);
   background-size: 44px, 65px;
-  background-position: 10%;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding-right: 90px;
 }
 
 .slogan-item-blue {
@@ -329,18 +345,51 @@ img {
 }
 
 .tool {
-  background-image: url(../img/drill.svg) no-repeat;
+  background-image: url(../img/drill.svg);
   background-size: 75px, 61px;
-  background-position: 10%;
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding-right: 110px;
+}
+
+.tractor {
+  background-image: url(../img/tractor-icon.svg);
+  background-size: 78px, 62px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding-right: 110px;
+}
+
+.big-cart {
+  background-image: url(../img/big-cart-icon.svg);
+  background-size: 59px, 72px;
+  background-position: 90%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  padding-right: 100px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.car {
+  background-image: url(../img/car.svg);
+  background-size: 78px, 63px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding-right: 110px;
+
 }
 
 .slogan-item-lilac {
   background-color: var(--special-lilac);
 }
 
-.slogan-item-greenl {
+.slogan-item-green {
   background-color: var(--special-greenlight);
+
 }
 
 .slogan-item-yellow {
@@ -380,15 +429,17 @@ img {
 }
 
 .perforator {
-  background: url(../img/perforator-slider.jpg) no-repeat;
+  background: url(../img/perforator-slider.jpg);
   height: 266px;
   width: 620px;
+  background-repeat: no-repeat;
 }
 
 .drill {
-  background: url(../img/drill-slider.jpg) no-repeat;
+  background: url(../img/drill-slider.jpg);
   height: 266px;
   width: 620px;
+  background-repeat: no-repeat;
 }
 
 
@@ -404,6 +455,8 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
+  display: inline-block;
+  padding: 11px 46px 10px;
 }
 
 .product-list {
@@ -411,7 +464,21 @@ img {
   padding: 0;
   list-style: none;
   font-family: PT Sans;
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-gap: 20px;
 }
+
+.product-list-inner {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: PT Sans;
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  grid-gap: 20px;
+}
+
 
 .new-price {
   background-color: var(--basic-red);
@@ -433,11 +500,13 @@ img {
   color: var(--grey-extra-light)
 }
 
-.cart{
-  background: url(../img/cart-icon.svg) no-repeat;
+.cart {
+  background: url(../img/cart-icon.svg);
+  background-repeat: no-repeat;
   background-size: 15px, 15px;
   background-position: left center;
-  padding: 20px;
+  padding: 10px 20px;
+  display: block;
 }
 
 .add-cart {
@@ -480,6 +549,9 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-gap: 20px;
 }
 
 .service {
@@ -562,6 +634,12 @@ img {
   z-index: 10;
 }
 
+.about {
+  display: grid;
+  grid-template-columns: 600px 300px;
+  grid-gap: 20px;
+}
+
 .info h2 {
   font-size: 30px;
   line-height: 30px;
@@ -611,6 +689,13 @@ img {
 
 .main-footer {
   background-color: var(--dark-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-nav {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .footer-nav,
@@ -641,6 +726,13 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-background);
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.footer-services {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .footer-services a {
@@ -659,9 +751,16 @@ img {
 
 .connect-footer {
   background-color: var(--header-top);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.connect-footer p {
+.feedback {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.main-footer p {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -671,6 +770,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .gold {
@@ -685,4 +786,34 @@ img {
 .gold:active {
   color: var(--basic-red);
   text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-top .container {
+  display: grid;
+  grid-template-columns: 220px 270px 450px;
+}
+
+.slogan-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+}
+
+.slider-li {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.header-info {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
 }
