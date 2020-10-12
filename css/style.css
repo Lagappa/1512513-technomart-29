@@ -37,7 +37,6 @@ body {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
-  text-transform: uppercase;
   background-color: var(--basic-white);
   margin: 0;
 }
@@ -144,6 +143,9 @@ img {
   font-size: 21px;
   line-height: 30px;
   border: solid 3px var(--basic-white);
+  display: block;
+  width: 150px;
+  padding: 0 10px;
 }
 
 .header-address {
@@ -166,15 +168,25 @@ img {
 
 .login-button a {
   color: inherit;
-  padding-left: 10px;
+  padding: 5px;
+
   margin-bottom: 20px;
   margin-right: 20px;
   text-align: center;
 }
 
+.login-button .login-link {
+  padding-left: 35px;
+}
+
 .login-link {
+  background-image: url(../img/icon-login.svg);
+  background-size: 21px, 17px;
+  background-repeat: no-repeat;
+  background-position: 10%;
   background-color: var(--basic-white);
   transition: all 0.3s;
+  display: block;
 }
 
 .login-link:hover {
@@ -188,6 +200,7 @@ img {
 .sign-up {
   background-color: var(--basic-white);
   transition: all 0.3s;
+  display: block;
 }
 
 .sign-up:hover {
@@ -205,7 +218,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: var(--basic-white);
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -216,16 +228,27 @@ img {
 }
 
 .people a {
-  color: inherit;
   padding-left: 10px;
   margin-bottom: 20px;
   margin-right: 10px;
   text-align: center;
 }
 
+.user {
+  background-color: var(--basic-white);
+  display: block;
+  padding: 5px;
+}
+
 .user:active {
   color: var(--basic-greylight);
   transition: 0.3s;
+}
+
+.input {
+  background-color: var(--basic-white);
+  display: block;
+  padding: 5px;
 }
 
 .input:active {
@@ -244,10 +267,13 @@ img {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: flex;
 }
 
 .personal a {
   color: inherit;
+  padding: 10px;
+  list-style: none;
 }
 
 .orders:hover {
@@ -276,7 +302,7 @@ img {
   color: var(--basic-white);
   margin: 0;
   margin-bottom: 20px;
-  padding: 0;
+  padding: 10px;
   list-style: none;
   background-color: var(--dark-blue);
   transition: all 0.3s;
@@ -287,9 +313,7 @@ img {
 
 .site-navigation a {
   color: inherit;
-}
-
-.site-navigation-link {
+  padding: 10px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -314,7 +338,6 @@ img {
   font-size: 30px;
   line-height: 30px;
   color: var(--dark-blue);
-
 }
 
 .bread-crumbs {
@@ -351,6 +374,7 @@ img {
   color: var(--basic-white);
   background-color: var(--white-opacity-slogan);
   transition: 0.3s;
+  padding: 10px;
 }
 
 .slogan-item a:hover {
@@ -416,7 +440,6 @@ img {
   background-repeat: no-repeat;
   background-position: 90%;
   padding-right: 110px;
-
 }
 
 .slogan-item-lilac {
@@ -425,7 +448,6 @@ img {
 
 .slogan-item-green {
   background-color: var(--special-greenlight);
-
 }
 
 .slogan-item-yellow {
@@ -456,12 +478,14 @@ img {
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-white);
+  padding: 10px;
 }
 
 .slider-p {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+  padding: 10px;
 }
 
 .perforator {
@@ -694,6 +718,8 @@ img {
 .info p {
   color: var(--black);
   font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .contacts h2 {
@@ -705,6 +731,8 @@ img {
 .contacts p {
   color: var(--black);
   font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .final {
@@ -722,7 +750,6 @@ img {
   font-family: PT Sans;
 }
 
-
 .main-footer {
   background-color: var(--dark-blue);
   display: grid;
@@ -735,6 +762,7 @@ img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  grid-row: 1/3;
 }
 
 .footer-nav li {
@@ -777,6 +805,7 @@ img {
 .footer-services {
   grid-column-start: 2;
   grid-column-end: 4;
+  grid-row: 2/3;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -806,7 +835,6 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 /* НЕ ПОЛУЧАЕТСЯ ПРАВИЛЬНО РАССТАВИТЬ ОБРАТНУЮ СВЯЗЬ*/
 
