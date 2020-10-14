@@ -26,6 +26,7 @@
   --pinklight: #F9F5F0;
   --dark-green: #518534;
   --light-blue: #F2F6F8;
+  --light-grey: #E5E5E5;
 
   --special: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -545,6 +546,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-white);
+  padding: 10px;
 }
 
 .product-item h3 {
@@ -552,12 +554,14 @@ img {
   line-height: 20px;
   color: var(--black);
   font-family: PT Sans;
+  padding: 0 10px;
 }
 
 .price {
   font-size: 17px;
   line-height: 18px;
-  color: var(--grey-extra-light)
+  color: var(--grey-extra-light);
+  padding: 0 10px;
 }
 
 .cart {
@@ -575,6 +579,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   transition: all 0.3s;
+  padding: 8px 15px;
 }
 
 .add-cart:hover {
@@ -594,6 +599,7 @@ img {
   border: 3px solid;
   border-color: var(--basic-green);
   transition: all 0.3s;
+  padding: 5px;
 }
 
 .add-bookmark:hover {
@@ -612,6 +618,10 @@ img {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
   grid-gap: 20px;
+}
+
+.brand {
+  padding: 10px;
 }
 
 .service {
@@ -700,6 +710,10 @@ img {
   grid-gap: 20px;
 }
 
+.info {
+  padding-bottom: 80px;
+}
+
 .info h2 {
   font-size: 30px;
   line-height: 30px;
@@ -737,6 +751,8 @@ img {
 
 .final {
   background-color: var(--basic-background);
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .final h3 {
@@ -750,8 +766,11 @@ img {
   font-family: PT Sans;
 }
 
-.main-footer {
+footer {
   background-color: var(--dark-blue);
+}
+
+.main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -830,28 +849,21 @@ img {
   text-decoration: none;
 }
 
-.connect-footer {
+.second-footer {
   background-color: var(--header-top);
+}
+
+.connect-footer {
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-/* НЕ ПОЛУЧАЕТСЯ ПРАВИЛЬНО РАССТАВИТЬ ОБРАТНУЮ СВЯЗЬ*/
 
 .feedback {
   grid-column-start: 3;
   grid-column-end: 4;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-}
-
-.feedback p {
-  align-content: flex-start;
-}
-
-.feedback a {
-  align-self: flex-end;
 }
 
 .main-footer p {
@@ -861,13 +873,14 @@ img {
 }
 
 .social {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
   grid-column-start: 2;
   grid-column-end: 3;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .gold {
@@ -916,7 +929,7 @@ img {
 
 .page-content {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   list-style: none;
   display: flex;
   justify-content: flex-start;
@@ -926,4 +939,14 @@ img {
 .page-content li {
   padding-left: 5px;
   padding-right: 5px;
+  border: solid 2px var(--light-grey);
+  margin-right: 5px;
+}
+
+.communication {
+  padding-right: 10px;
+}
+
+.developed {
+  padding-left: 10px;
 }
