@@ -97,6 +97,7 @@ img {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .user-list a {
@@ -125,12 +126,28 @@ img {
 }
 
 .bookmark {
-  background: url(../img/bookmark-icon.svg) no-repeat;
-  background-size: 14px, 16px;
-  background-position: left center;
   padding: 10px 20px;
   display: block;
+  position: relative;
 }
+
+.bookmark::before {
+  display: block;
+  content: "";
+  position: relative;
+  top: 20px;
+  left: -20px;
+  width: 14px;
+  height: 16px;
+  background-image: url(../img/bookmark-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+
+
+
 
 .about {
   color: var(--basic-red);
@@ -190,38 +207,20 @@ img {
   position: absolute;
   top: 7px;
   left: 8px;
-}
-
-
-.login-link-svg:hover {
-  fill: var(--basic-red);
-}
-
-
-
-/*.login-link::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 17px;
-  top: 7px;
-  left: 8px;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-login.svg);
-  background-position: 0 0;
-  filter: grayscale(1);
-}
-
-.login-link:hover::before {
-  fill: var(--basic-grey);
+  color: var(--basic-greylight);
   transition: all 0.3s;
-  filter: grayscale(0);
-
-
-.login-link:active::before {
-  filter: grayscale(1);
 }
-}*/
+
+.login-link:hover .login-link-svg  {
+  color: var(--dark-blue);
+  transition: all 0.3s;
+}
+
+.login-link:active .login-link-svg  {
+  color: var(--basic-greylight);
+  transition: all 0.3s;
+}
+
 .login-link:hover {
   color: var(--basic-red);
 }
@@ -278,30 +277,42 @@ padding-right: 30px;
   display: block;
   padding: 5px;
   color: var(--black);
-  
-}
-.user::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 17px;
-  top: 7px;
-  left: 5px;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-user.svg);
-  background-position: 0 0;
 }
 
-.user::after {
-  content: "";
+.user-icon {
   position: absolute;
-  width: 21px;
-  height: 17px;
+  top: 7px;
+  left: 5px;
+  color: var(--basic-greylight);
+  transition: all 0.3s;
+}
+
+.logout-icon {
+  position: absolute;
   top: 7px;
   right: 57px;
-  background-repeat: no-repeat;
-  background-image: url(../img/icon-logout.svg);
-  background-position: 0 0;
+  color: var(--basic-greylight);
+  transition: all 0.3s;
+}
+
+.user:hover .user-icon {
+  color: var(--dark-blue);
+  transition: all 0.3s;
+}
+
+.user:active .user-icon {
+  color: var(--basic-greylight);
+  transition: all 0.3s;
+}
+
+.user:hover .logout-icon {
+  color: var(--dark-blue);
+  transition: all 0.3s;
+}
+
+.user:active .logout-icon {
+  color: var(--basic-greylight);
+  transition: all 0.3s;
 }
 
 .user:active {
