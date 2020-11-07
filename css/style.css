@@ -787,6 +787,10 @@ img {
   text-transform: uppercase;
 }
 
+.maker-header {
+  padding-right: 18px;
+}
+
 .top-product {
   padding-bottom: 10px;
 }
@@ -831,11 +835,12 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: PT Sans;
   display: grid;
   grid-template-columns: 220px 220px 220px;
   grid-template-rows: 318px;
   grid-gap: 20px;
+  grid-row-gap: 16px;
+
 }
 
 /*НАЗВАНИЕ КЛАССА ПОМЕНЯТЬ*/
@@ -884,11 +889,7 @@ img {
   justify-content: center;
   align-items: center;
   padding-right: 12px;
-}
-
-.product-item-picture img {
-  max-width: 100%;
-  height: auto;
+  padding-top: 5px;
 }
 
 .product-item a {
@@ -899,23 +900,20 @@ img {
 }
 
 .BOSCH-9000 {
-  padding-top: 2px;
   padding-right: 0;
 }
 
 .product-item h3 {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
   color: var(--black);
   font-family: PT Sans;
-  padding: 0;
   order: 2;
-  padding-top: 7px;
-}
-
-.product-item-title {
-  margin: 0;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
 }
 
 .product-item-title a {
@@ -935,14 +933,16 @@ img {
   right: 0;
   opacity: 0;
   background-color: var(--basic-white);
-  padding-top: 36px;
+  padding-top: 37px;
   padding-bottom: 50px;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 .product-item-prices {
   order: 4;
   padding-left: 15px;
+  font-family: PT Sans;
 }
 
 .product-item p {
@@ -981,7 +981,7 @@ img {
   color: var(--grey-extra-light);
   padding: 0;
   margin: 0;
-  margin-bottom: 13px;
+  padding-bottom: 15px;
 }
 
 .price del {
@@ -1033,7 +1033,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   transition: all 0.3s;
-  padding: 8px 15px;
+  padding: 10px 15px;
   position: relative;
   width: 135px;
   margin: 0 auto;
@@ -1041,6 +1041,7 @@ img {
   position: relative;
   box-shadow: inset 0px -3px 0px var(--add-shadow);
   border-radius: 2px;
+  padding-left: 25px;
   z-index: 2;
 }
 
@@ -1049,7 +1050,7 @@ img {
   content: "";
   position: absolute;
   top: 10px;
-  left: 15px;
+  left: 30px;
   width: 15px;
   height: 15px;
   background-image: url(../img/cart-icon.svg);
@@ -1080,6 +1081,7 @@ img {
   width: 135px;
   margin: 0 auto;
   border-radius: 2px;
+  padding-left: 13px;
 }
 
 .add-bookmark:hover {
@@ -1347,7 +1349,7 @@ img {
 .final {
   background-color: var(--basic-background);
   padding-bottom: 70px;
-  padding-top: 65px;
+  padding-top: 66px;
 }
 
 .final h3 {
@@ -1358,7 +1360,7 @@ img {
   font-weight: 400;
   color: var(--black);
   text-transform: uppercase;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 
 .final p {
@@ -1608,7 +1610,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 44px;
+  padding-top: 46px;
 }
 
 .pagination-item a {
@@ -1732,6 +1734,7 @@ footer {
   margin: 0;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
   font-family: PT Sans;
   background-color: var(--filter-color);
   padding: 10px 151px 10px 20px;
@@ -1742,6 +1745,22 @@ footer {
   background-color: var(--filter-color);
   border-radius: 5px;
   margin-bottom: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.sort p {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: inherit;
+  font-weight: 400;
+  font-family: PT Sans;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-right: 80px;
 }
 
 .maker {
@@ -1758,12 +1777,15 @@ footer {
   background-color: var(--filter-strip);
 }
 
-.sort-list h2,
 .sort-list a {
+  padding: 0;
   margin: 0;
   font-size: 13px;
   line-height: 18px;
   color: inherit;
+  font-weight: 400;
+  font-family: PT Sans;
+  text-transform: uppercase;
 }
 
 .sort-list {
@@ -1771,8 +1793,59 @@ footer {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.sort-item {
+  margin-left: 15px;
+}
+
+.sort-buttons-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 7px;
+}
+
+.sort-buttons {
+  width: 43px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button-up,
+.button-down {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 0 6px 10px;
+  border-color: transparent transparent var(--basic-greylight);
+  cursor: pointer;
+}
+
+.button-down {
+  transform: rotate(180deg);
+}
+
+.button-up:hover,
+.button-down:hover {
+  border-color: transparent transparent var(--black);
+}
+
+.button-up:active,
+.button-down:active {
+  border-color: transparent transparent var(--basic-red);
+}
+
+.sort-buttons .active {
+  border-color: transparent transparent var(--basic-red);
 }
 
 .range-filter {
@@ -1786,6 +1859,10 @@ footer {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.filter-item-energy {
+  padding-bottom: 4px;
 }
 
 .range-controls {
@@ -1882,7 +1959,7 @@ footer {
   line-height: 30px;
   font-weight: 700;
   font-family: PT Sans;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-left: 4px;
 }
 
@@ -1891,16 +1968,16 @@ footer {
   margin: 0;
   list-style: none;
   line-height: 19px;
-  padding-top: 18px;
-  padding-bottom: 13px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .filter-option {
   font-size: 15px;
   line-height: 19px;
   font-family: PT Sans;
-  padding-left: 36px;
-  padding-bottom: 20px;
+  padding-left: 38px;
+  padding-bottom: 21px;
   font-weight: 400;
 }
 
@@ -1919,7 +1996,7 @@ footer {
   content: "";
   position: absolute;
   left: -35px;
-  top: 0;
+  top: -2px;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
@@ -1930,7 +2007,7 @@ footer {
   content: "";
   position: absolute;
   left: -35px;
-  top: 0;
+  top: -2px;
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
@@ -1940,7 +2017,7 @@ footer {
   content: "";
   position: absolute;
   left: -35px;
-  top: 0;
+  top: -4px;
   width: 25px;
   height: 25px;
   background-image: url(../img/radio-on.svg);
@@ -1950,10 +2027,24 @@ footer {
   content: "";
   position: absolute;
   left: -35px;
-  top: 0;
+  top: -4px;
   width: 25px;
   height: 25px;
   background-image: url(../img/radio-off.svg);
+}
+
+.show-button {
+  background-color: var(--basic-white);
+  font-size: 13px;
+  line-height: 18px;
+  font-family: PT Sans;
+  font-weight: 400;
+  color: var(--black);
+  display: inline-block;
+  padding: 10px 80px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid var(--light-grey);
 }
 
 .slider-arrow {
@@ -2000,7 +2091,7 @@ footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
   filter: drop-shadow(0px 4px 20px var(--product-shadow));
-
+  display: none;
 }
 
 .modal::after {
