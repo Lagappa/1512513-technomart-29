@@ -110,7 +110,14 @@ img {
 .search-form {
   position: relative;
   display: block;
+}
 
+.search-form button {
+  padding: 0;
+  margin: 0;
+  border: none; 
+  outline: none;
+  background-color: inherit;
 }
 
 .search-form:hover {
@@ -235,7 +242,7 @@ input[type=search]:focus+label path {
   padding-bottom: 8px;
   padding-left: 69px;
   padding-right: 41px;
-  margin-top: 10px;
+  margin-top: 9px;
   text-align: center;
   position: relative;
 }
@@ -554,8 +561,8 @@ input[type=search]:focus+label path {
   font-weight: 400;
   color: var(--dark-blue);
   text-transform: uppercase;
-  padding-top: 29px;
-  padding-bottom: 30px;
+  padding-top: 31px;
+  padding-bottom: 29px;
   padding-left: 29px;
 }
 
@@ -564,7 +571,7 @@ input[type=search]:focus+label path {
   grid-template-columns: 220px 700px;
   grid-column-gap: 20px;
   padding-bottom: 59px;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 .bread-crumbs {
@@ -656,7 +663,7 @@ input[type=search]:focus+label path {
 .materials {
   background-image: url(../img/paint-can-icon.svg);
   background-size: 44px, 65px;
-  padding: 20px;
+  padding: 22px;
   background-repeat: no-repeat;
   background-position: 83% 52%;
   padding-right: 90px;
@@ -669,7 +676,7 @@ input[type=search]:focus+label path {
 .tool {
   background-image: url(../img/drill.svg);
   background-size: 75px, 61px;
-  padding: 20px;
+  padding: 22px;
   background-repeat: no-repeat;
   background-position: 86% 53%;
   padding-right: 110px;
@@ -678,7 +685,7 @@ input[type=search]:focus+label path {
 .tractor {
   background-image: url(../img/tractor-icon.svg);
   background-size: 78px, 62px;
-  padding: 20px;
+  padding: 22px;
   background-repeat: no-repeat;
   background-position: 86% 50%;
   padding-right: 110px;
@@ -688,7 +695,7 @@ input[type=search]:focus+label path {
   background-image: url(../img/big-cart-icon.svg);
   background-size: 59px, 72px;
   background-position: 81% 50%;
-  padding: 20px;
+  padding: 22px;
   background-repeat: no-repeat;
   padding-right: 100px;
   grid-column-start: 3;
@@ -698,7 +705,7 @@ input[type=search]:focus+label path {
 .car {
   background-image: url(../img/car.svg);
   background-size: 78px, 63px;
-  padding: 20px;
+  padding: 22px;
   background-repeat: no-repeat;
   background-position: 86% 53%;
   padding-right: 110px;
@@ -1509,7 +1516,7 @@ footer {
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-white);
-  padding-top: 37px;
+  padding-top: 35px;
 }
 
 .feedback {
@@ -1612,7 +1619,7 @@ footer {
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 123px 123px 123px;
   grid-gap: 20px;
-  padding-bottom: 59px;
+  padding-bottom: 61px;
 }
 
 .slider-li {
@@ -1638,7 +1645,7 @@ footer {
   font-weight: 400;
   font-style: italic;
   padding-left: 30px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .page-content {
@@ -1775,17 +1782,18 @@ footer {
   font-weight: 400;
   font-family: PT Sans;
   background-color: var(--filter-color);
-  padding: 10px 151px 10px 20px;
+  padding: 8px 151px 10px 18px;
   border-radius: 5px;
 }
 
 .sort {
   background-color: var(--filter-color);
   border-radius: 5px;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding: 8px 17px 5px 18px;
 }
 
 .sort p {
@@ -1797,10 +1805,8 @@ footer {
   font-weight: 400;
   font-family: PT Sans;
   text-transform: uppercase;
-  padding-top: 10px;
-  margin-right: auto;
-  padding-left: 19px;
-  margin-top: -2px;
+  padding-top: 2px;
+  margin-right: 34px;
 }
 
 .maker {
@@ -1829,7 +1835,6 @@ footer {
 }
 
 .sort-list {
-  padding: 6px 17px 5px 18px;
   margin: 0;
   list-style: none;
   display: flex;
@@ -1844,6 +1849,7 @@ footer {
 
 .sort-item {
   margin-left: 66px;
+  margin-top: 2px;
 }
 
 .sort-item-type:first-child a {
@@ -1941,7 +1947,7 @@ footer {
   height: 80px;
   padding-top: 39px;
   padding-right: 20px;
-  padding-left: 23px;
+  padding-left: 20px;
   background-color: var(--filter-color);
   border-radius: 5px;
 }
@@ -1972,11 +1978,11 @@ footer {
 }
 
 .range-controls .toggle-min {
-  left: 23px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 165px;
+  left: 162px;
 }
 
 .price-controls {
@@ -2004,14 +2010,14 @@ footer {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 17px;
 }
 
 .min-price::after {
   content: "";
   position: absolute;
   top: 28px;
-  right: 102px;
+  right: 105px;
   width: 9px;
   height: 1px;
   background-color: var(--trait);
@@ -2031,7 +2037,6 @@ footer {
   font-weight: 700;
   font-family: PT Sans;
   padding-top: 15px;
-  padding-left: 4px;
 }
 
 .filter ul {
@@ -2047,8 +2052,8 @@ footer {
   font-size: 15px;
   line-height: 19px;
   font-family: PT Sans;
-  padding-left: 38px;
-  padding-bottom: 21px;
+  margin-left: 35px;
+  margin-bottom: 21px;
   font-weight: 400;
 }
 
