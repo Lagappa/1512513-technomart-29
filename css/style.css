@@ -123,6 +123,9 @@ img {
   padding: 2px 10px 0 42px;
   background-color: transparent;
   border: none;
+  color: var(--dark-blue);
+  font-size: 21px;
+  line-height: 30px;
 }
 
 .search-form input::placeholder {
@@ -139,13 +142,13 @@ img {
 
 input[type=search]:focus {
   background-color: var(--basic-white);
-  color: var(--black);
+  color: var(--dark-blue);
 }
+
 
 input[type=search]:focus::placeholder {
   color: var(--black);
 }
-
 
 input[type=search]:hover+label path {
   fill: var(--basic-white);
@@ -560,7 +563,7 @@ input[type=search]:focus+label path {
   display: grid;
   grid-template-columns: 220px 700px;
   grid-column-gap: 20px;
-  padding-bottom: 58px;
+  padding-bottom: 59px;
   padding-top: 23px;
 }
 
@@ -1232,6 +1235,7 @@ input[type=search]:focus+label path {
   background-position: 235px 70px;
 }
 
+
 .credit .red-button {
   margin-top: 26px;
   margin-left: 29px;
@@ -1239,9 +1243,14 @@ input[type=search]:focus+label path {
 }
 
 .slider-tab:hover {
+  background-color: var(--header-top);
+}
+
+.slider-tab:active {
   background-color: var(--basic-white);
   color: var(--dark-blue);
 }
+
 
 .slider-content {
   box-sizing: border-box;
@@ -1377,7 +1386,7 @@ input[type=search]:focus+label path {
 
 .final {
   background-color: var(--basic-background);
-  padding-bottom: 70px;
+  padding-bottom: 69px;
   padding-top: 66px;
 }
 
@@ -1639,7 +1648,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 48px;
+  padding-top: 46px;
 }
 
 .pagination-item a {
@@ -1773,7 +1782,7 @@ footer {
 .sort {
   background-color: var(--filter-color);
   border-radius: 5px;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -1820,7 +1829,7 @@ footer {
 }
 
 .sort-list {
-  padding: 7px 19px;
+  padding: 6px 17px 5px 18px;
   margin: 0;
   list-style: none;
   display: flex;
@@ -1837,24 +1846,25 @@ footer {
   margin-left: 66px;
 }
 
-.sort-item-type:first-child {
+.sort-item-type:first-child a {
   color: var(--basic-red);
   border: none;
   opacity: 1;
+  margin-right: 3px;
 }
 
-.sort-item-type {
+.sort-item-type a {
   opacity: 0.3;
   border-bottom: 1px dashed var(--basic-red);
 }
 
-.sort-item-type:hover {
+.sort-item-type:hover a {
   opacity: 1;
   border-bottom: 1px solid var(--basic-red);
   color: var(--black);
 }
 
-.sort-item-type:active {
+.sort-item-type:active a {
   opacity: 1;
   border-bottom: none;
   color: var(--basic-red);
