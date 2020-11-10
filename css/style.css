@@ -58,7 +58,7 @@ body {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  color: var(--basic-black);
+  color: var(--black);
   background-color: var(--basic-white);
   margin: 0;
 }
@@ -177,20 +177,20 @@ img {
   left: 17px;
 }
 
-input[type=search]:focus {
+.search-form-input:focus {
   background-color: var(--basic-white);
   color: var(--dark-blue);
 }
 
-input[type=search]:focus::placeholder {
+.search-form-input:focus::placeholder {
   color: var(--black);
 }
 
-input[type=search]:hover+label path {
+.search-form-input:hover+label path {
   fill: var(--basic-white);
 }
 
-input[type=search]:focus+label path {
+.search-form-input:focus+label path {
   fill: var(--basic-red);
 }
 
@@ -617,7 +617,7 @@ input[type=search]:focus+label path {
 .bread-crumbs a {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   color: var(--black);
   text-transform: uppercase;
   font-weight: 400;
@@ -694,7 +694,7 @@ input[type=search]:focus+label path {
   background-size: 44px, 65px;
   padding: 22px;
   background-repeat: no-repeat;
-  background-position: 83% 52%;
+  background-position: 83% 55%;
   padding-right: 90px;
 }
 
@@ -707,7 +707,7 @@ input[type=search]:focus+label path {
   background-size: 75px, 61px;
   padding: 22px;
   background-repeat: no-repeat;
-  background-position: 86% 53%;
+  background-position: 86% 52%;
   padding-right: 110px;
 }
 
@@ -736,7 +736,7 @@ input[type=search]:focus+label path {
   background-size: 78px, 63px;
   padding: 22px;
   background-repeat: no-repeat;
-  background-position: 86% 53%;
+  background-position: 86% 55%;
   padding-right: 110px;
 }
 
@@ -878,7 +878,7 @@ input[type=search]:focus+label path {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
   grid-template-rows: 318px;
@@ -955,7 +955,7 @@ input[type=search]:focus+label path {
   flex-wrap: wrap;
 }
 
-.BOSCH-9000 {
+.bosch-9000 {
   padding-right: 0;
 }
 
@@ -966,7 +966,7 @@ input[type=search]:focus+label path {
   line-height: 20px;
   font-weight: 700;
   color: var(--black);
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   order: 2;
   padding-top: 10px;
   padding-bottom: 7px;
@@ -998,7 +998,7 @@ input[type=search]:focus+label path {
 .product-item-prices {
   order: 4;
   padding-left: 15px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .product-item p {
@@ -1017,6 +1017,10 @@ input[type=search]:focus+label path {
 
 .brand-item:hover {
   box-shadow: 0px 4px 20px var(--product-shadow);
+}
+
+.brand-item:active {
+  opacity: 0.5;
 }
 
 .new::after {
@@ -1207,7 +1211,7 @@ input[type=search]:focus+label path {
   margin: 0;
   font-weight: 400;
   color: var(--black);
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   padding-top: 22px;
 }
 
@@ -1350,7 +1354,7 @@ input[type=search]:focus+label path {
 .info p {
   margin: 0;
   color: var(--black);
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -1405,7 +1409,7 @@ input[type=search]:focus+label path {
 .contacts p {
   margin: 0;
   color: var(--black);
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-top: 12px;
@@ -1440,7 +1444,7 @@ input[type=search]:focus+label path {
 .final p {
   margin: 0;
   color: var(--black);
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -1690,7 +1694,7 @@ footer {
 .pagination-item a {
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   display: block;
   padding: 9px 15px;
   border: solid 1px var(--light-grey);
@@ -1809,9 +1813,9 @@ footer {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   background-color: var(--filter-color);
-  padding: 8px 151px 10px 18px;
+  padding: 10px 151px 10px 18px;
   border-radius: 5px;
 }
 
@@ -1832,7 +1836,7 @@ footer {
   line-height: 18px;
   color: inherit;
   font-weight: 400;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   padding-top: 2px;
   margin-right: 34px;
@@ -1859,7 +1863,7 @@ footer {
   line-height: 18px;
   color: inherit;
   font-weight: 400;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -1974,7 +1978,7 @@ footer {
 .range-controls {
   position: relative;
   height: 80px;
-  padding-top: 39px;
+  padding-top: 41px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: var(--filter-color);
@@ -1994,7 +1998,7 @@ footer {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 34px;
   left: 0;
   width: 16px;
   height: 16px;
@@ -2023,7 +2027,7 @@ footer {
 
 .price-controls label {
   text-transform: uppercase;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
 }
 
@@ -2037,8 +2041,7 @@ footer {
   border-radius: 5px;
   background-color: var(--filter-color);
   position: relative;
-  padding-bottom: 10px;
-  padding-left: 17px;
+  padding: 10px 0;
 }
 
 .min-price::after {
@@ -2063,7 +2066,7 @@ footer {
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   padding-top: 15px;
 }
 
@@ -2079,7 +2082,7 @@ footer {
 .filter-option {
   font-size: 15px;
   line-height: 19px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   margin-left: 35px;
   margin-bottom: 21px;
   font-weight: 400;
@@ -2141,11 +2144,11 @@ footer {
   background-color: var(--basic-white);
   font-size: 13px;
   line-height: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   color: var(--black);
   display: inline-block;
-  padding: 10px 80px;
+  padding: 10px 78px;
   text-transform: uppercase;
   text-align: center;
   border: 1px solid var(--light-grey);
@@ -2192,7 +2195,7 @@ footer {
   bottom: 0;
   left: 0;
   margin: auto;
-  color: var(--basic-black);
+  color: var(--black);
   background-color: var(--basic-white);
   filter: drop-shadow(0px 4px 20px var(--product-shadow));
   display: none;
@@ -2259,6 +2262,7 @@ footer {
 .modal-write {
   width: 620px;
   height: 430px;
+  z-index: 2;
 }
 
 .modal-write p {
@@ -2394,3 +2398,7 @@ footer {
   text-transform: uppercase;
   text-align: center;
 }
+
+.modal-active {
+  display: block;
+} 
